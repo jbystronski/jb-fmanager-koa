@@ -1,0 +1,18 @@
+{
+  "name": "@jb_fmanager/koa",
+  "version": "1.0.0",
+  "description": "jb file manager endpoint setup for koa",
+  "repository": "jbystronski/jb-fmanager-koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Bystroński",
+  "license": "ISC",
+  "dependencies": {
+    "@jb_fmanager/node-utils": "latest"
+  },
+  "peerDependencies": {
+    "koa": "^2.13.4"
+  }
+}
