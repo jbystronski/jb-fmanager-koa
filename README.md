@@ -1,4 +1,4 @@
-<p><a href=https://github.com/jbystronski/jb-fmanager-react">@jb_fmanager/react</a> setup for koa</p>
+<p><a href="https://github.com/jbystronski/jb-fmanager-react">@jb_fmanager/react</a> setup for koa</p>
 
 <h4>Installation</h4>
 
@@ -14,11 +14,9 @@ yarn add @jb_fmanager/koa @jb_fmanager/node-utils
 
 <h4>Options</h4>
 
-<strong>prefix</strong>
-
+<p style="font-weight: bold;">prefix</p>
 <p>Must match the namespace provided to the manager, default is "api/fm".</p>
-<strong>maxUploadSize</strong>
-<p>If you want to override the value provided to the manager. Accepts bytes, ie 5242880 (5mb).</p>
+<p style="font-weight: bold;">maxUploadSize</p><p>If you want to override the value provided to the manager. Accepts bytes, ie 5242880 (5mb).</p>
 
 <h4>Example use</h4>
 
