@@ -1,6 +1,6 @@
 {
   "name": "@jb_fmanager/koa",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jb file manager endpoint setup for koa",
   "repository": "jbystronski/jb-fmanager-koa",
   "main": "index.js",
