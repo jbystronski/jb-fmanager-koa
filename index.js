@@ -1,6 +1,6 @@
 const fm = require("@jb_fmanager/node-utils");
 
-const fmRoutes = (router, { prefix = "/", errorHandler, maxUploadSize }) => {
+module.exports = (router, { prefix = "/", errorHandler, maxUploadSize }) => {
   const handle = (err) => {
     console.error(err);
     if (errorHandler) errorHandler(err);
@@ -52,5 +52,3 @@ const fmRoutes = (router, { prefix = "/", errorHandler, maxUploadSize }) => {
       .catch(handle);
   });
 };
-
-module.exports = fmRoutes;
