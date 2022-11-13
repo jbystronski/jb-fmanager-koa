@@ -1,13 +1,16 @@
 const fm = require("@jb_fmanager/node-utils");
 
-module.exports = (router, { prefix = "/", errorHandler, maxUploadSize }) => {
+module.exports = (
+  router,
+  { prefix = "/", errorHandler, root = "public", maxUploadSize }
+) => {
   const handle = (err) => {
     console.error(err);
     if (errorHandler) errorHandler(err);
   };
 
   router.get(prefix + "/map", async (ctx) => {
-    ctx.body = await fm.map(ctx.request.query.path).catch(handle);
+    ctx.body = await fm.map(root).catch(handle);
   });
 
   router.get(prefix + "/create_folder", async (ctx) => {

@@ -14,9 +14,13 @@ yarn add @jb_fmanager/koa @jb_fmanager/node-utils
 
 <h4>Options</h4>
 
+<p style="font-weight: bold;">root</p>
+<p>Root folder for the frontend component</p>
 <p style="font-weight: bold;">prefix</p>
 <p>Must match the namespace provided to the manager, default is "api/fm".</p>
 <p style="font-weight: bold;">maxUploadSize</p><p>If you want to override the value provided to the manager. Accepts bytes, ie 5242880 (5mb).</p>
+<p style="font-weight: bold;">errorHandler</p>
+<p>To handle errors your way, optional</p>
 
 <h4>Example use</h4>
 
@@ -32,7 +36,11 @@ const router = new Router();
 
 // passing the router as first argument
 
-require("@jb_fmanager/koa")(router, { prefix: "/api/fm" });
+require("@jb_fmanager/koa")(router, {
+  root: "public",
+  prefix: "/api/fm",
+  errorHandler: undefined,
+});
 
 app.use(cors());
 app.use(bodyParser());
